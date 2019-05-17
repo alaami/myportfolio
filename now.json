@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "my-new-app",
+    "name": "My-Port-Folio",
     "builds": [
       {
         "src": "package.json",
