@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "remove-demo-unix": "rm -rf projects && rm angular.json && mv angular-clean.json angular.json",
-    "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json"
+    "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json",
+	"now-build": "ng build --prod --output-path dist"
   },
   "private": true,
   "dependencies": {
@@ -48,7 +49,7 @@
     "@angular/compiler": "^7.2.12",
     "@angular/compiler-cli": "^7.2.12",
     "@angular/language-service": "^7.2.12",
-    "@types/jasmine": "~3.3.0",
+    "@types/jasmine": "^3.3.12",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~10.12.10",
     "codelyzer": "^4.0.1",
