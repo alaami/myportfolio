@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "My-Port-Folio",
+    "alias": ["fititsolution.com"]
     "builds": [
       {
         "src": "package.json",
