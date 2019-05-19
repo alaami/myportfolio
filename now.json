@@ -2,6 +2,9 @@
     "version": 2,
     "name": "My-Port-Folio",
     "alias": ["fititsolution.com"],
+    "github": {
+    "autoAlias": false
+    },
     "builds": [
       {
         "src": "package.json",
