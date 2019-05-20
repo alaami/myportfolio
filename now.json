@@ -12,11 +12,6 @@
       }
     ],
     "routes": [
-	{
-      "src": "/(.*)",
-      "status": 301,
-      "headers": { "Location": "https://fititsolution.com/$1" }
-    },
       { "src": "(.*\\..*)", "dest": "$1" },
       { "src": ".*", "dest": "/index.html" }
     ]
