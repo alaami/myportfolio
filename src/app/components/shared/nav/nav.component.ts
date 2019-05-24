@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,LOCALE_ID, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { faArrowCircleLeft,faHome,faInfoCircle,faAddressCard,faHandPointDown  } from '@fortawesome/free-solid-svg-icons';
-//import { far } from '@fortawesome/free-regular-svg-icons';
-//import { fab } from '@fortawesome/free-brands-svg-icons';
+import { LanguageService } from '../../../services/language/language.service';
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -15,10 +15,13 @@ export class NavComponent {
   faAddressCard=faAddressCard;
   faHome=faHome;
   faHandPointDown=faHandPointDown;
-  constructor(private location: Location) {
+  text: string;
+
+  constructor(private location: Location,private translate: LanguageService) {}
+  
+  setLang(lang: string) {
+   this.translate.useLang(lang);
   }
-
-
   back() {
     this.location.back();
   }

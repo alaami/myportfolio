@@ -1,6 +1,9 @@
 <app-carousel *ngIf="!isChildRouteLoaded"></app-carousel>
 <main class="container"> 
-      
+        <h1>
+                Welcome to {{ 'TITLE' | translate }}!
+              </h1>
+   
 <div class="row" *ngIf="!isChildRouteLoaded">             
 <app-services></app-services>
 <hr class="my-5">

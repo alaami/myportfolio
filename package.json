@@ -6,12 +6,15 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-locale:en": "ng build --prod --i18n-locale en --i18n-format xlf --i18n-file src/locale/messages.en.xlf --output-path=dist/en --baseHref /en/",
+    "build-locale:fr": "ng build --prod --i18n-locale fr --i18n-format xlf --i18n-file src/locale/messages.fr.xlf --output-path=dist/fr --baseHref /fr/",
+    "build-locale": "npm run build-locale:en && npm run build-locale:fr",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "remove-demo-unix": "rm -rf projects && rm angular.json && mv angular-clean.json angular.json",
     "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json",
-	"now-build": "ng build --prod --output-path dist"
+    "now-build": "ng build --prod --output-path dist"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +34,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.1.0",
     "@fortawesome/free-regular-svg-icons": "^5.1.0",
     "@fortawesome/free-solid-svg-icons": "^5.1.0",
+    "@ngx-translate/core": "^11.0.1",
+    "@ngx-translate/http-loader": "^4.0.0",
     "angular-bootstrap-md": "7.4.3",
     "angular-font-awesome": "^3.1.2",
     "angular-formio": "^3.13.0",
