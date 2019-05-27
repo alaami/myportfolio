@@ -3,32 +3,32 @@
 
   <!-- Navbar brand -->
   <mdb-navbar-brand>
-    <a class="navbar-brand" routerLink="/">Angular Docs</a>
+    <a class="navbar-brand" routerLink="/">{{'titreCompany' | translate }}</a>
   </mdb-navbar-brand>
- 
+
   <!-- Collapsible content -->
   <links>
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
         <li class="nav-item waves-light white-text d-flex flex-column justify-content-center" mdbWavesEffect>
           
-          <a (click)="back()" i18n="@@lienback">
+          <a (click)="back()">
               <fa-icon [icon]="faArrowCircleLeft"></fa-icon>
-             Go Back
+             {{'lienback' | translate}}
             </a>
     
           </li>
       <li class="nav-item">
           
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/" i18n="@@lienhome">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/">
           <fa-icon [icon]="faHome"></fa-icon>
-          Home
+          {{'lienhome' | translate}}
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/profile" i18n="@@lienaboutus">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/profile">
           <fa-icon [icon]="faInfoCircle"></fa-icon>
-          About Us
+          {{'lienaboutus' | translate}}
         </a>
       </li>
       
@@ -40,26 +40,24 @@
               <span class="caret"></span>
             </a>
             <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/development" i18n="@@liendev">Développment</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/integration" i18n="@@lienintegr">Integration</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/conseil" i18n="@@lienconseil">Conseil</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/service-gere" i18n="@@lienservicegere">Service géré</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/development">{{'liendev' | translate}}</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/integration">{{'lienintegr' | translate}}</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/conseil">{{'lienconseil' | translate}}</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/service-gere">{{'lienservicegere' | translate}}</a>
             </div>
           </li>
       <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact" i18n="@@liencontact">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact">
             <fa-icon [icon]="faAddressCard"></fa-icon>
-            Contact Us</a>
+            {{'liencontact' | translate}}</a>
       </li>
     </ul>
     <!-- Links -->
   </links>
   <!-- Collapsible content -->
-  <div>
-
-      <button (click)="setLang('fr')">Language: FR</button>
-      <button (click)="setLang('en')">Language: EN</button>
-    </div>   
+  <links>  <div class="ml-auto">
+      <button mdbBtn type="button" color="amber" class="waves-light" size="sm" (click)="setLang('fr')" mdbWavesEffect>Français</button>
+      <button mdbBtn type="button" color="amber" class="waves-light" size="sm"(click)="setLang('en')" mdbWavesEffect>English</button>
+    </div> </links>
 </mdb-navbar>
-{{'TITLE' | translate}}
 <!--/.Navbar-->
