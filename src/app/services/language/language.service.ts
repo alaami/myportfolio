@@ -18,7 +18,7 @@ export class LanguageService {
   browserLang: any
   english: boolean
   french: boolean
-constructor(public translate: TranslateService) { }
+constructor(public translate: TranslateService) {}
 useLang(language: string) {
     this.translate.use(language)
     localStorage.setItem('lang', language)
