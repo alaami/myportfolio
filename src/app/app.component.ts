@@ -2,14 +2,11 @@
    Copyright (c) 2019 MDBootstrap.com
 */ 
 import { Component } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
-  title = 'prjportfolio';
+title='FIT IT SOlutions'
 }

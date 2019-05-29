@@ -1,5 +1,4 @@
 {
-	"TITLE": "My i18n Application (en)",
 	"aboutusContent": "We offer exceptional services in Web development, Web application integration, managed service and consulting.",
 	"aboutusHeader": "About Us",
 	"aboutusLead": "Fit IT Solutions is recognized by creativity, innovation and quality.",
@@ -49,7 +48,7 @@
 		{"id":1 ,"name":"Developpment", "imagepath":"home-dev.png", "description": "We offer a web development service that delivers value to your business by creating quality web solutions that meet your needs.", "link": "/services/development" },
 		{ "id": 2, "name": "Integration", "imagepath":"home-integr.jpg", "description": "We offer a web application integration service (Web services, API ...) offering a coherent strategy to develop a quality IT infrastructure.", "link": "/services/integration" },
 		{"id":3 , "name": "Consulting", "imagepath":"home-consult.jpg", "description": "We offer a consulting service that will provide you with quality IT solutions that meet your needs and respect quality. Our service is flexible and fits all your needs", "link": "/services/conseil" },
-		{ "id": 4, "name": "Manged Service", "imagepath":"home-servgere.jpg", "description": "We'll help you in your day-to-day tasks by providing application support to align IT operations with your goals.", "link": "/components/cards" }
+		{ "id": 4, "name": "Manged Service", "imagepath":"home-servgere.jpg", "description": "We'll help you in your day-to-day tasks by providing application support to align IT operations with your goals.", "link": "/services/service-gere" }
 		]
 	},
 	"titreCompany":"Fit IT Solutions"
