@@ -1,5 +1,4 @@
 {
-	"TITLE": "My i18n Application (fr)",
 	"aboutusContent": "Nous offrons des véritables services dans le domaine de développement Web, d’intégration des applications Web, de service géré et du conseil.",
 	"aboutusHeader": "À propos",
 	"aboutusLead": "Les solutions Fit IT reconnue par la créativité, l’innovation et la qualité.",
@@ -49,7 +48,7 @@
 		{"id":1 ,"name":"Développment", "imagepath":"home-dev.png", "description": "Nous offrons un service de développement Web qui rajoute de la valeur à votre entreprise en créant des solutions web de qualité qui répondent le mieux à vos besoins.", "link": "/services/development" },
 		{ "id": 2, "name": "Intégration", "imagepath":"home-integr.jpg", "description": "Nous offrons un service d’intégration des application Web (Web services, API …) offrant une stratégie cohérente pour développer une infrastructure TI de qualité.", "link": "/services/integration" },
 		{"id":3 , "name": "Conseil", "imagepath":"home-consult.jpg", "description": "Nous offrons un service de conseil qui vous suggérera des solutions informatiques de qualité répondant à vos besoins.", "link": "/services/conseil" },
-		{ "id": 4, "name": "Service géré", "imagepath":"home-servgere.jpg", "description": "Nous vous aiderons dans vos tâches quotidiennes en vous offrons de support applicatif afin d’aligner les opérations TI avec vos objectifs. ", "link": "/components/cards" }
+		{ "id": 4, "name": "Service géré", "imagepath":"home-servgere.jpg", "description": "Nous vous aiderons dans vos tâches quotidiennes en vous offrons de support applicatif afin d’aligner les opérations TI avec vos objectifs. ", "link": "/services/service-gere" }
 		]
 	},
 	"titreCompany":"Les solutions Fit IT"
