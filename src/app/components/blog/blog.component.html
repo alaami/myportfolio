@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="col-md-6 mx-auto my-5">
+    <h3 class="text-center">
+      <strong>Blog</strong>
+    </h3>
+  </div>
+    <div class="row">
+  <div *ngFor="let article of articles" class="col-md-3 mx-auto mb-5">
+  <!-- Card -->
+  <mdb-card>
+    <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+      <!-- Card img -->
+      <mdb-card-img src="{{article.image.url}}" alt="Card image cap"></mdb-card-img>
+      <a>
+        <div class="mask"></div>
+      </a>
+    </div>
+    <!--Card content-->
+    <mdb-card-body>
+      <!--Title-->
+      <mdb-card-title>
+        <h4>{{article.titre}}</h4>
+      </mdb-card-title>
+
+      <!--Text-->
+      <mdb-card-text>
+          <div [innerHtml]="article.description"></div>
+        </mdb-card-text>
+        
+      <a routerLink="" class="btn btn-primary btn-sm waves-light"  mdbWavesEffect>{{'learnMore2' | translate}}</a>
+    </mdb-card-body>
+    <div class="mdb-color lighten-3 text-center">
+        <ul class="list-unstyled list-inline font-small mt-3">
+          <li class="list-inline-item pr-2 white-text">
+            <i class="far fa-clock pr-1"></i>{{ article.creationdate | date:'short' }}</li>
+          <li class="list-inline-item pr-2">
+        </ul>
+      </div>
+  </mdb-card>
+</div>
+</div>

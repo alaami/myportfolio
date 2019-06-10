@@ -51,5 +51,6 @@
 		{ "id": 4, "name": "Manged Service", "imagepath":"home-servgere.jpg", "description": "We'll help you in your day-to-day tasks by providing application support to align IT operations with your goals.", "link": "/services/service-gere" }
 		]
 	},
-	"titreCompany":"Fit IT Solutions"
+	"titreCompany":"Fit IT Solutions",
+	"learnMore2": "Read"
 }
