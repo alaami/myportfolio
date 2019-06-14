@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  strapiServerUrl:"https://blogcms-prj.herokuapp.com"
+  strapiServerUrl:"http://localhost:1337",
+  formappServerUrl:"https://form-manage-app.herokuapp.com"
 };
 
 /*

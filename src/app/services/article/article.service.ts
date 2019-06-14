@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
-import { HttpClient,HttpErrorResponse } from '@angular/common/http';
+import { HttpClient,HttpErrorResponse,HttpParams } from '@angular/common/http';
 import {ArticleResponse} from '../../interfaces/articleresponse';
 import {catchError} from 'rxjs/operators';
-import { throwError } from 'rxjs'; 
+import { throwError, Observable, of} from 'rxjs';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService {
-  articlesEndPoint = 'http://localhost:1337/articles';
+  strapiurl=environment.strapiServerUrl;
+  articlesEndPoint = this.strapiurl+'/articles';
 
   constructor(private http: HttpClient) { }
 
@@ -30,6 +32,13 @@ export class ArticleService {
 
   getArticles() {
     return this.http.get<ArticleResponse>(this.articlesEndPoint)
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+  getArticle(link: string) {
+    let params = new HttpParams().set('link', link);
+    return this.http.get<ArticleResponse>(this.articlesEndPoint, { params: params })
     .pipe(
       catchError(this.handleError)
     );

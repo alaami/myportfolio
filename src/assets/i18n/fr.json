@@ -52,5 +52,10 @@
 		]
 	},
 	"titreCompany":"Les solutions Fit IT",
-	"learnMore2": "Lire"
+	"learnMore2": "Lire",
+	"first": "Première",
+	"last": "Dernière",
+	"previous": "Précedente",
+	"next": "Prochaine",
+	"lang":"fr"
 }

@@ -28,6 +28,8 @@ import { HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { BlogComponent } from './components/blog/blog.component';
+import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
+import { DisqusModule } from "ngx-disqus";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -51,7 +53,8 @@ export function createTranslateLoader(http: HttpClient) {
     ListGroupsComponent,
     IntegrationBlocsComponent,
     ServiceGereViewComponent,
-    BlogComponent
+    BlogComponent,
+    ArticleDetailComponent
   ],
   imports: [
 
@@ -69,7 +72,8 @@ export function createTranslateLoader(http: HttpClient) {
     ReactiveFormsModule,
     FontAwesomeModule,
     FormioModule,
-    HttpClientModule
+    HttpClientModule,
+    DisqusModule.forRoot('comments-app')
   ],
   bootstrap: [AppComponent]
 })

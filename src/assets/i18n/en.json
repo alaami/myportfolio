@@ -52,5 +52,10 @@
 		]
 	},
 	"titreCompany":"Fit IT Solutions",
-	"learnMore2": "Read"
+	"learnMore2": "Read",
+	"first": "First",
+	"last": "Last",
+	"previous": "Previous",
+	"next": "Next",
+	"lang":"en"
 }
