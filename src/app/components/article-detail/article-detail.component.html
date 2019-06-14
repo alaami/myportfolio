@@ -1,0 +1,43 @@
+<div *ngIf="article">
+    <div *ngFor="let item of article">
+    <div class="row">
+      <div class="col-md-12">
+        <mdb-card cascade="true" wider="true" reverse="true" class="my-4">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="{{item.image.url}}"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+
+          <!-- Card content -->
+          <mdb-card-body cascade="true" class="text-center">
+
+            <!--Title-->
+            <mdb-card-title>
+              <h4 class="indigo-text">
+                <strong>{{item.titre | uppercase}}</strong>
+              </h4>
+            </mdb-card-title>
+            <mdb-card-text>
+                 <div [innerHtml]="item.contenu"></div>   
+            </mdb-card-text>           
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  <div class="row">
+      <div class="col-md-12">
+          <mdb-card cascade="true" wider="true" reverse="true" class="my-4">
+            <div class="mx-5">
+          <disqus [identifier]='item.link' [language]="'lang' | translate"></disqus>
+        </div>
+        </mdb-card>
+      </div>
+  </div>
+  <div class="row mb-5">
+  </div>
+  </div>
+  </div>
