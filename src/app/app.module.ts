@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,APP_INITIALIZER } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 
 import { FormioModule } from 'angular-formio';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
@@ -57,7 +58,7 @@ export function createTranslateLoader(http: HttpClient) {
     ArticleDetailComponent
   ],
   imports: [
-
+    MarkdownModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     TranslateModule.forRoot({
       loader: {

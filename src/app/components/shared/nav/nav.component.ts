@@ -1,6 +1,6 @@
 import { Component,LOCALE_ID, Inject } from '@angular/core';
 import { Location } from '@angular/common';
-import { faArrowCircleLeft,faHome,faInfoCircle,faAddressCard,faHandPointDown  } from '@fortawesome/free-solid-svg-icons';
+import { faArrowCircleLeft,faHome,faInfoCircle,faAddressCard,faHandPointDown, faNewspaper  } from '@fortawesome/free-solid-svg-icons';
 import { LanguageService } from '../../../services/language/language.service';
 
 @Component({
@@ -15,6 +15,7 @@ export class NavComponent {
   faAddressCard=faAddressCard;
   faHome=faHome;
   faHandPointDown=faHandPointDown;
+  faNewspaper=faNewspaper;
   text: string;
 
   constructor(private location: Location,private translate: LanguageService) {}

@@ -13,16 +13,19 @@
           <!--/Card image-->
 
           <!-- Card content -->
-          <mdb-card-body cascade="true" class="text-center">
+          <mdb-card-body cascade="true">
 
             <!--Title-->
-            <mdb-card-title>
+            <mdb-card-title class="text-center">
               <h4 class="indigo-text">
                 <strong>{{item.titre | uppercase}}</strong>
               </h4>
             </mdb-card-title>
             <mdb-card-text>
-                 <div [innerHtml]="item.contenu"></div>   
+                 <markdown ngPreserveWhitespaces>                    
+                    {{item.contenu}}
+                  </markdown>
+                 
             </mdb-card-text>           
           </mdb-card-body>
         </mdb-card>

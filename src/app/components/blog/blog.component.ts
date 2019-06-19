@@ -3,6 +3,7 @@ import {ArticleService} from '../../services/article/article.service'
 import {ArticleResponse} from '../../interfaces/articleresponse';
 import { environment } from '../../../environments/environment';
 import { ActivatedRoute } from '@angular/router';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -14,8 +15,8 @@ export class BlogComponent implements OnInit {
   @ViewChildren('pages') pages: QueryList<any>;
   isChildRouteLoaded = false;
   strapiurl;
-  itemsPerPage = 4;
-  numberOfVisiblePaginators = 4;
+  itemsPerPage = 10;
+  numberOfVisiblePaginators = 10;
   numberOfPaginators: number;
   paginators: Array<any> = [];
   activePage = 1;
@@ -24,6 +25,7 @@ export class BlogComponent implements OnInit {
   firstVisiblePaginator = 0;
   lastVisiblePaginator = this.numberOfVisiblePaginators;
   articles: any;
+  faCalendar=faCalendar;
   constructor(private router: ActivatedRoute,private articleService: ArticleService) {
     this.strapiurl=environment.strapiServerUrl;
    }
