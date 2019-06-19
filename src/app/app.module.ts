@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,APP_INITIALIZER } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 
 import { FormioModule } from 'angular-formio';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
@@ -27,6 +28,9 @@ import { ServiceGereViewComponent } from './components/service-gere-view/service
 import { HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { BlogComponent } from './components/blog/blog.component';
+import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
+import { DisqusModule } from "ngx-disqus";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -49,10 +53,12 @@ export function createTranslateLoader(http: HttpClient) {
     ContactFormComponent,
     ListGroupsComponent,
     IntegrationBlocsComponent,
-    ServiceGereViewComponent
+    ServiceGereViewComponent,
+    BlogComponent,
+    ArticleDetailComponent
   ],
   imports: [
-
+    MarkdownModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
@@ -67,7 +73,8 @@ export function createTranslateLoader(http: HttpClient) {
     ReactiveFormsModule,
     FontAwesomeModule,
     FormioModule,
-    HttpClientModule
+    HttpClientModule,
+    DisqusModule.forRoot('comments-app')
   ],
   bootstrap: [AppComponent]
 })

@@ -11,13 +11,16 @@ import { ConseilViewComponent } from './../../components/conseil-view/conseil-vi
 import { ServiceGereViewComponent } from './../../components/service-gere-view/service-gere-view.component';
 import { ProfileComponent } from './../../components/profile/profile.component';
 import { ContactComponent } from './../../components/contact/contact.component';
+import { BlogComponent } from './../../components/blog/blog.component';
+import { ArticleDetailComponent } from './../../components/article-detail/article-detail.component';
 const routes: Routes = [
   { 
 	path: '', component: HomeViewComponent, children: [
       { path: 'services', component: ServicesComponent},
       { path: 'profile', component: ProfileComponent},
-      { path: 'contact', component: ContactComponent}
-      
+      { path: 'contact', component: ContactComponent},
+      { path: 'blog', component: BlogComponent},
+      { path: 'article/:link', component: ArticleDetailComponent}
 
 	]
  
