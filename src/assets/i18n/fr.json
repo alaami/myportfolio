@@ -51,5 +51,11 @@
 		{ "id": 4, "name": "Service géré", "imagepath":"home-servgere.jpg", "description": "Nous vous aiderons dans vos tâches quotidiennes en vous offrons de support applicatif afin d’aligner les opérations TI avec vos objectifs. ", "link": "/services/service-gere" }
 		]
 	},
-	"titreCompany":"Les solutions Fit IT"
+	"titreCompany":"Les solutions Fit IT",
+	"learnMore2": "Lire",
+	"first": "Première",
+	"last": "Dernière",
+	"previous": "Précedente",
+	"next": "Prochaine",
+	"lang":"fr"
 }

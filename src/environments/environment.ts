@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  strapiServerUrl:"http://localhost:1337",
+  formappServerUrl:"https://form-manage-app.herokuapp.com"
 };
 
 /*

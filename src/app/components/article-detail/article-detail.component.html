@@ -1,10 +1,11 @@
-
+<div *ngIf="article">
+    <div *ngFor="let item of article">
     <div class="row">
       <div class="col-md-12">
         <mdb-card cascade="true" wider="true" reverse="true" class="my-4">
           <!--Card image-->
           <div class="view view-cascade overlay waves-light" mdbWavesEffect>
-            <mdb-card-img src="assets/images/aboutus.jpg"></mdb-card-img>
+            <mdb-card-img src="{{item.image.url}}"></mdb-card-img>
             <a>
               <div class="mask rgba-white-slight"></div>
             </a>
@@ -15,13 +16,16 @@
           <mdb-card-body cascade="true">
 
             <!--Title-->
-            <mdb-card-title>
-              <h4 class="indigo-text text-center" >
-                <strong>{{'lienaboutus' | translate}}</strong>
+            <mdb-card-title class="text-center">
+              <h4 class="indigo-text">
+                <strong>{{item.titre | uppercase}}</strong>
               </h4>
             </mdb-card-title>
             <mdb-card-text>
-                {{'textaboutus' | translate}}    
+                 <markdown ngPreserveWhitespaces>                    
+                    {{item.contenu}}
+                  </markdown>
+                 
             </mdb-card-text>           
           </mdb-card-body>
         </mdb-card>
@@ -29,8 +33,14 @@
     </div>
   <div class="row">
       <div class="col-md-12">
-    <app-contact-form></app-contact-form>
-  </div>
+          <mdb-card cascade="true" wider="true" reverse="true" class="my-4">
+            <div class="mx-5">
+          <disqus [identifier]='item.link' [language]="'lang' | translate"></disqus>
+        </div>
+        </mdb-card>
+      </div>
   </div>
   <div class="row mb-5">
-    </div>
+  </div>
+  </div>
+  </div>
