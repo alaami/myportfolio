@@ -3,7 +3,13 @@
 
   <!-- Navbar brand -->
   <mdb-navbar-brand>
-    <a class="navbar-brand" routerLink="/">{{'titreCompany' | translate }}</a>
+    <a class="navbar-brand" routerLink="/">
+    <img
+    src="assets/images/logo.svg"
+    alt="Fit It solutions"
+    height="150"
+    width="400" />
+  </a>
   </mdb-navbar-brand>
 
   <!-- Collapsible content -->
@@ -61,8 +67,8 @@
   </links>
   <!-- Collapsible content -->
   <links style="width: 50%;">  <div class="ml-auto">
-      <button mdbBtn type="button" color="amber" class="waves-light" size="sm" (click)="setLang('fr')" mdbWavesEffect>Français</button>
-      <button mdbBtn type="button" color="amber" class="waves-light" size="sm"(click)="setLang('en')" mdbWavesEffect>English</button>
+      <button mdbBtn type="button" color="primary" rounded="true" outline="true"  size="sm" (click)="setLang('fr')" mdbWavesEffect>FR</button>
+      <button mdbBtn type="button" color="primary" rounded="true" outline="true"  size="sm" (click)="setLang('en')" mdbWavesEffect>EN</button>
     </div> </links>
 </mdb-navbar>
 <!--/.Navbar-->

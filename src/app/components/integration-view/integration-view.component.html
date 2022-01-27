@@ -13,16 +13,17 @@
 
           <!-- Card content -->
           <mdb-card-body cascade="true">
+            <mdb-card>
+              <mdb-card-body>
+                <p class="lead text-center">{{'conseilpagelead' | translate}}
+                </p>
+                <p>{{'intgrpageintro' | translate}}                        
+                </p>           
+              </mdb-card-body>
+            </mdb-card> 
 
-            <!--Title-->
-            <mdb-card-title>
-
-            </mdb-card-title>
 
             <mdb-card-text>
-                  <p> 
-                      {{'intgrpageintro' | translate}}                      
-                  </p>
                   <app-integration-blocs></app-integration-blocs>
             </mdb-card-text>        
           </mdb-card-body>

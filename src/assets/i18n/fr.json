@@ -9,7 +9,7 @@
 	"devpageangular": "DÉVELOPPER SUR TOUTES LES PLATEFORMES\n    Découvrez un moyen de créer des applications avec Angular et de réutiliser votre code et vos capacités pour créer des applications pour toute cible de déploiement. Pour le Web, le Web mobile, le mobile natif et l'oridnateur.\n    Obtenez la vitesse maximale possible sur la plate-forme Web aujourd'hui et allez plus loin, via Web Workers et le render du côté serveur.",
 	"devpagecmsintro": "Nous utilisons les CMS (Content Managment System) suivants",
 	"devpagefwintro": "Nous utilisons les frameworks suivant",
-	"devpageintro": " Nous offrons un service de développement Web qui apporte de la valeur à votre entreprise en créant des solutions web de qualité qui répondent le mieux à vos besoins.\n                      \n                      Nous mettons à votre entière disposition notre expérience accumulée dans le domaine de développement Web ; nous nous basons sur l’apport de la valeur à votre entreprise.  Nous combinons les méthodologies de développement (Agile), le cycle de développement (SDLC) et les outils de gestion de projets pour délivrer des solutions Web de qualité.",
+	"devpageintro": " Nous offrons un service de développement qui apporte de la valeur à votre entreprise en créant des solutions de qualité qui répondent le mieux à vos besoins.\n                      \n                      Nous mettons à votre entière disposition notre expérience accumulée dans le domaine de développement ; nous nous basons sur l’apport de la valeur à votre entreprise.  Nous combinons les méthodologies de développement (Agile), le cycle de développement (SDLC) et les outils de gestion de projets pour délivrer des solutions de qualité.",
 	"devpagelead": "                    Vous avez moins de 3 secondes pour garder un utilisateur dans votre site Web.",
 	"devpagephp": "PHP est un langage de script polyvalent populaire, particulièrement adapté au développement Web.\n    Rapide, flexible et pragmatique, PHP alimente tout, de votre blog aux sites Web les plus populaires du monde.",
 	"integrpagebloc1": "Intégration des applications et API à votre système informatique (Dashboard)",
@@ -57,5 +57,9 @@
 	"last": "Dernière",
 	"previous": "Précedente",
 	"next": "Prochaine",
-	"lang":"fr"
+	"lang":"fr",
+	"webdevt":"Développement Web",
+	"mobileappt":"Mobile Apps",
+	"desktopappt":"Apps de bureau",
+	"nospecial":"Nos spécialités"
 }

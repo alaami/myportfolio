@@ -9,7 +9,7 @@
 	"devpageangular": "DEVELOP ACROSS ALL PLATFORMS\nLearn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.\nAchieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering.\n",
 	"devpagecmsintro": "We use the following Content Managment System -  CMS ",
 	"devpagefwintro": "We use the folloing Frameworks",
-	"devpageintro": "We offer a web development service that delivers value to your business by creating quality web solutions that meet your needs.\n                      \n                       You have the benefit of our accumulated experience in Web development; we rely on delivering value to your business. We combine development methodologies (Agile), development cycle (SDLC) and project management tools to deliver quality Web solutions\n",
+	"devpageintro": "We offer a development service that delivers value to your business by creating solutions that meet your requirements.\n                      \n                       You benefit from our accumulated experience in development; we rely on delivering value to your business. We combine development methodologies (Agile), development cycle (SDLC) and project management tools to deliver quality solutions\n",
 	"devpagelead": "You have less than 3 seconds to keep a user in your website",
 	"devpagephp": "PHP is a popular general-purpose scripting language that is especially suited to web development.\nFast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.\n",
 	"integrpagebloc1": "Integration of applications and APIs to your computer system (Dashboard)",
@@ -57,5 +57,9 @@
 	"last": "Last",
 	"previous": "Previous",
 	"next": "Next",
-	"lang":"en"
+	"lang":"en",
+	"webdevt":"Web development",
+	"mobileappt":"Mobile Apps",
+	"desktopappt":"Desktop Apps",
+	"nospecial":"Our specialities"
 }

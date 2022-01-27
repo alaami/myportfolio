@@ -2,7 +2,8 @@
 <main class="container">   
 <div class="row" *ngIf="!isChildRouteLoaded">             
 <app-services></app-services>
-<hr class="my-5">
+</div>
+<div *ngIf="!isChildRouteLoaded">    
 <app-panel></app-panel>
 </div>
 <router-outlet  *ngIf="isChildRouteLoaded"></router-outlet>
