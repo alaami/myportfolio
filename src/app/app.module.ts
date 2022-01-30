@@ -3,8 +3,6 @@ import { NgModule,APP_INITIALIZER } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
-
-import { FormioModule } from 'angular-formio';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { RoutesModule } from './modules/routes/routes.module';
@@ -72,7 +70,6 @@ export function createTranslateLoader(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    FormioModule,
     HttpClientModule,
     DisqusModule.forRoot('comments-app')
   ],

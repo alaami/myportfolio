@@ -5,7 +5,6 @@
 export const environment = {
   production: false,
   strapiServerUrl:"http://localhost:1337",
-  formappServerUrl:"https://form-manage-app.herokuapp.com"
 };
 
 /*

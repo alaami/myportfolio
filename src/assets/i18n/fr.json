@@ -1,5 +1,5 @@
 {
-	"aboutusContent": "Nous offrons des véritables services dans le domaine de développement Web, d’intégration des applications Web, de service géré et du conseil.",
+	"aboutusContent": "Nous offrons des véritables services dans le domaine de développement (Web, Mobile App, Desktop App), d’intégration des applications Web, de service géré et du conseil.",
 	"aboutusHeader": "À propos",
 	"aboutusLead": "Les solutions Fit IT reconnue par la créativité, l’innovation et la qualité.",
 	"autretechtitle": "Autres technologies",
@@ -43,7 +43,7 @@
 	"slideServiceGere": "Profitez bien du monde numérique",
 	"slideServiceGereTitre": "Service géré",
 	"techtitre": "Technologies",
-	"textaboutus": "Les solutions Fit IT est reconnue par la créativité, l’innovation et  qualité. Nous offrons des véritables services dans le domaine de développement Web, d’intégration des applications Web, de service géré et du conseil. Notre expertise permettra d’établir une proposition des meilleures options disponibles sur le marché afin de vous aider à atteindre vos objectifs spécifiques. \n                Nous veillons sur l’apport des solutions adéquates qui répondent à vos besoins et qui respectent vos budgets. Nous proposons également des approches et des stratégie cohérentes pour améliorer l’exercice de vos taches.",
+	"textaboutus": "Les solutions Fit IT est reconnue par la créativité, l’innovation et  qualité. Nous offrons des véritables services dans le domaine de développement (Web, Mobile App, Desktop App), d’intégration des applications Web, de service géré et du conseil. Notre expertise permettra d’établir une proposition des meilleures options disponibles sur le marché afin de vous aider à atteindre vos objectifs spécifiques. \n                Nous veillons sur l’apport des solutions adéquates qui répondent à vos besoins et qui respectent vos budgets. Nous proposons également des approches et des stratégie cohérentes pour améliorer l’exercice de vos taches.",
 	"services":{"itemsArray" : [
 		{"id":1 ,"name":"Développment", "imagepath":"home-dev.png", "description": "Nous offrons un service de développement Web qui rajoute de la valeur à votre entreprise en créant des solutions web de qualité qui répondent le mieux à vos besoins.", "link": "/services/development" },
 		{ "id": 2, "name": "Intégration", "imagepath":"home-integr.jpg", "description": "Nous offrons un service d’intégration des application Web (Web services, API …) offrant une stratégie cohérente pour développer une infrastructure TI de qualité.", "link": "/services/integration" },

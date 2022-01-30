@@ -19,21 +19,17 @@
         <li class="nav-item waves-light white-text d-flex flex-column justify-content-center" mdbWavesEffect>
           
           <a (click)="back()">
-              <fa-icon [icon]="faArrowCircleLeft"></fa-icon>
              {{'lienback' | translate}}
             </a>
     
           </li>
       <li class="nav-item">
-          
         <a class="nav-link waves-light" mdbWavesEffect routerLink="/">
-          <fa-icon [icon]="faHome"></fa-icon>
           {{'lienhome' | translate}}
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link waves-light" mdbWavesEffect routerLink="/profile">
-          <fa-icon [icon]="faInfoCircle"></fa-icon>
           {{'lienaboutus' | translate}}
         </a>
       </li>
@@ -41,7 +37,6 @@
            <!-- Dropdown -->
            <li class="nav-item dropdown" dropdown>
             <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light">
-              <fa-icon [icon]="faHandPointDown"></fa-icon>
               Services
               <span class="caret"></span>
             </a>
@@ -54,19 +49,18 @@
           </li>
         <li class="nav-item" routerLinkActive="active">
             <a class="nav-link waves-light" mdbWavesEffect routerLink="/blog">
-              <fa-icon [icon]="faNewspaper"></fa-icon>
               {{'Blog' | translate}}</a>
         </li>
       <li class="nav-item" routerLinkActive="active">
           <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact">
-            <fa-icon [icon]="faAddressCard"></fa-icon>
             {{'liencontact' | translate}}</a>
       </li>
     </ul>
     <!-- Links -->
   </links>
   <!-- Collapsible content -->
-  <links style="width: 50%;">  <div class="ml-auto">
+  <links style="width: 50%;">  
+    <div class="ml-auto">
       <button mdbBtn type="button" color="primary" rounded="true" outline="true"  size="sm" (click)="setLang('fr')" mdbWavesEffect>FR</button>
       <button mdbBtn type="button" color="primary" rounded="true" outline="true"  size="sm" (click)="setLang('en')" mdbWavesEffect>EN</button>
     </div> </links>

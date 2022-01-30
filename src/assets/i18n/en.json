@@ -1,5 +1,5 @@
 {
-	"aboutusContent": "We offer exceptional services in Web development, Web application integration, managed service and consulting.",
+	"aboutusContent": "We offer exceptional services in development (Web, Mobile App, Desktop App), Web application integration, managed service and consulting.",
 	"aboutusHeader": "About Us",
 	"aboutusLead": "Fit IT Solutions is recognized by creativity, innovation and quality.",
 	"autretechtitle": "Other technologies",
@@ -43,7 +43,7 @@
 	"slideServiceGere": "Take benefit of the digital world",
 	"slideServiceGereTitre": "Managed Service",
 	"techtitre": "Technologies",
-	"textaboutus": "Fit IT Solutions is recognized by creativity, innovation and quality. We offer exceptional services in Web development, Web application integration, managed service and consulting. Our expertise will establish a proposal of the best options available on the market to help you achieve your specific goals\n                 We ensure the provision of adequate solutions that meet your needs and respect your budgets. We also offer consistent approaches and strategies to improve the performance of your tasks.\n",
+	"textaboutus": "Fit IT Solutions is recognized by creativity, innovation and quality. We offer exceptional services in development (Web, Mobile App, Desktop App), Web application integration, managed service and consulting. Our expertise will establish a proposal of the best options available on the market to help you achieve your specific goals\n                 We ensure the provision of adequate solutions that meet your needs and respect your budgets. We also offer consistent approaches and strategies to improve the performance of your tasks.\n",
 	"services":{"itemsArray" : [
 		{"id":1 ,"name":"Developpment", "imagepath":"home-dev.png", "description": "We offer a web development service that delivers value to your business by creating quality web solutions that meet your needs.", "link": "/services/development" },
 		{ "id": 2, "name": "Integration", "imagepath":"home-integr.jpg", "description": "We offer a web application integration service (Web services, API ...) offering a coherent strategy to develop a quality IT infrastructure.", "link": "/services/integration" },

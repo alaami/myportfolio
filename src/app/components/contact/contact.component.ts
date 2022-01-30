@@ -8,9 +8,8 @@ import { environment } from '../../../environments/environment';
 })
 
 export class ContactComponent {
-  formappurl;
+
   constructor() {
-    this.formappurl=environment.formappServerUrl;
    }
  
 }

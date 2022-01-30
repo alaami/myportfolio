@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faArrowCircleLeft,faHome,faInfoCircle,faAddressCard,faHandPointDown  } from '@fortawesome/free-solid-svg-icons';
-
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -8,12 +6,8 @@ import { faArrowCircleLeft,faHome,faInfoCircle,faAddressCard,faHandPointDown  } 
 })
 export class FooterComponent implements OnInit {
 
-  faArrowCircleLeft =faArrowCircleLeft;
-  faInfoCircle=faInfoCircle;
-  faAddressCard=faAddressCard;
-  faHome=faHome;
-  faHandPointDown=faHandPointDown;
-  constructor() { }
+  constructor() {  //Change DATE_TIME_FORMAT by the format need
+   }
 
   ngOnInit() {
 
