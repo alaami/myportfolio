@@ -1,3 +1,4 @@
 User-agent: Googlebot
-User-agent: smartphone
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
 User-agent: msnbot
