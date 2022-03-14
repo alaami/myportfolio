@@ -31,4 +31,7 @@ if (language === 'en') {
       this.french = false
     }
   }
+  getTranslate(key: string){
+    return this.translate.get(key);
+  }
 }
