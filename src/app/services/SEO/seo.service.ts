@@ -8,12 +8,12 @@ import { LanguageService } from '../../services/language/language.service';
 export class SEOService {
 
   constructor(private meta: Meta, private translate:LanguageService, private title:Title) {
-    this.title.setTitle(this.translate.translate('htmlTitleTag'));
+    this.title.setTitle(this.translate.translate.instant('htmlTitleTag'));
     meta.addTags([
        {name: 'description', content:  this.translate.translate.instant('metaDescr') },
        {name: 'robots', content: 'INDEX, FOLLOW'},
        {name: 'author', content: 'Fit IT Solutions'},
-       {name: 'keywords', content: this.translate.translate.translate('metaKeywords')},
+       {name: 'keywords', content: this.translate.translate.instant('metaKeywords')},
        {httpEquiv: 'Content-Type', content: 'text/html'}
     ]);     
 }
