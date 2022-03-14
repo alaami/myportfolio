@@ -1,17 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
+import { LanguageService } from '../../services/language/language.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SEOService {
 
-  constructor(private meta: Meta) {
+  constructor(private meta: Meta, private translate:LanguageService, private title:Title) {
+    this.title.setTitle(this.translate.translate('htmlTitleTag'));
     meta.addTags([
-       {name: 'description', content: 'We offer services in Web, Mobile and Desktop App development. IT consulting. We offer best options on the market that meet your needs and respect your budgets.'},
+       {name: 'description', content:  this.translate.translate('metaDescr') },
        {name: 'robots', content: 'INDEX, FOLLOW'},
        {name: 'author', content: 'Fit IT Solutions'},
-       {name: 'keywords', content: 'TypeScript, Angular, PHP, Web development, Web companies, Web agency, Web agencies, IT Solutions, Information Technology, Technical Support, it Services, it Consultant, Managed Service Provider, it Companies, it Solutions, it Security, it Manager, Managed it Services,Technology Consulting, Cloud Architecture,Tech Solutions, it Service Management, Cloud Infrastructurs'},
+       {name: 'keywords', content: this.translate.translate('metaKeywords')},
        {httpEquiv: 'Content-Type', content: 'text/html'}
     ]);     
 }
