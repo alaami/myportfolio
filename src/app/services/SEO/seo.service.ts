@@ -10,10 +10,10 @@ export class SEOService {
   constructor(private meta: Meta, private translate:LanguageService, private title:Title) {
     this.title.setTitle(this.translate.translate('htmlTitleTag'));
     meta.addTags([
-       {name: 'description', content:  this.translate.translate('metaDescr') },
+       {name: 'description', content:  this.translate.translate.instant('metaDescr') },
        {name: 'robots', content: 'INDEX, FOLLOW'},
        {name: 'author', content: 'Fit IT Solutions'},
-       {name: 'keywords', content: this.translate.translate('metaKeywords')},
+       {name: 'keywords', content: this.translate.translate.translate('metaKeywords')},
        {httpEquiv: 'Content-Type', content: 'text/html'}
     ]);     
 }
